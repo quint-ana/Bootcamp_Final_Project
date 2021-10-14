@@ -2,14 +2,14 @@
 <html>
     <header>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <script src="index.js"></script>
-
     </header>
     <body>
 
 
-        <!--Navigation-->
+        <!--Top bar Navigation-->
         
         <ul class="nav justify-content-center">
           <li class="nav-item">
@@ -22,34 +22,65 @@
             <a class="nav-link" href="#">What is Autism?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">What we Fund</a>
+            <a class="nav-link" href="#">What we Fund</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Get Involved</a>
+            <a class="nav-link" href="#">Get Involved</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Resources</a>
+            <a class="nav-link" href="#">Resources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Contact Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
           </li>
         </ul>
-        
+
       <!--Side bar nav-->
     
+      <div class="container">
+        <div class="row py-3">
+            <div class="col-3 order-2" id="sticky-sidebar">
+                <div class="sticky-top">
+                  <div class="container">
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="#">Donate</a>
+                      <a href="#">Participate in Research</a>
+                      <a href="#">Events</a>
+                      <a href="#">Student Clubs</a>
+                      <a href="#">Jobs and Internships</a>
+                      <a href="#">Participants in Research</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col" id="main">
+                <h3>Get Involved</h3>
+                ...   
+            </div>
+        </div>
+    </div>
+
+    <!--Initial side bar-->
+    <!--
+    <div class="container">
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Donate</a>
-        <a href="#">Partcipate in Research</a>
+        <a href="#">Participate in Research</a>
         <a href="#">Events</a>
         <a href="#">Student Clubs</a>
         <a href="#">Jobs and Internships</a>
         <a href="#">Participants in Research</a>
       </div>
+    </div>
+  -->
       
       <!-- Use any element to open the sidenav -->
-      <span onclick="openNav()">open</span>
-
+      <!--
+        <span onclick="openNav()">Open</span>
+      -->
+      
       <!--Top of Donation Page-->
 
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
@@ -67,72 +98,110 @@
 
       <!--Step 1-->
 
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <h2 class="display-4">Step 1: Donation Level</h2>
-        <button type="button" class="btn btn-secondary">$25</button>
-        <button type="button" class="btn btn-secondary">$50</button>
-        <button type="button" class="btn btn-secondary">$100</button>
-        <button type="button" class="btn btn-secondary">$250</button>
-        <button type="button" class="btn btn-secondary">Other</button>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="btn-group" role="group" aria-label="Basic example"></div>
+            <h1 class="display-4">Step 1: Donation Level</h1>
+              <div>
+                    <button type="button" class="btn btn-secondary">$25</button>
+                    <button type="button" class="btn btn-secondary">$50</button>
+                    <button type="button" class="btn btn-secondary">$100</button>
+                    <button type="button" class="btn btn-secondary">$250</button>
+                    <button type="button" class="btn btn-secondary">Other</button>
+              </div>
+        </div>
       </div>
 
       <!--Step 2-->
 
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <h2 class="display-4">Step 2: Donation Frequency</h2>
-        <button type="button" class="btn btn-secondary">One Time</button>
-        <button type="button" class="btn btn-secondary">Monthly</button>
-        <button type="button" class="btn btn-secondary">Quarterly</button>
-        <button type="button" class="btn btn-secondary">Annually</button>
-      </div>
-</div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="btn-group" role="group" aria-label="Basic example"></div>
+            <h2 class="display-4">Step 2: Donation Frequency</h2>
+            <div>
+              <button type="button" class="btn btn-secondary">One Time</button>
+              <button type="button" class="btn btn-secondary">Monthly</button>
+              <button type="button" class="btn btn-secondary">Quarterly</button>
+              <button type="button" class="btn btn-secondary">Annually</button>
+            </div>
+        </div>
+        </div>
+
 
       <!--Step 3-->
 
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <h2 class="display-4">Step 3: Payment Information</h2>
-        <p>Please select your payment below.</p>
-        <button type="button" class="btn btn-secondary">Credit/Debit</button>
-        <button type="button" class="btn btn-secondary">PayPal</button>
-      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="btn-group" role="group" aria-label="Basic example"></div>
+            <h2 class="display-4">Step 3: Payment Information</h2>
+              <p>Please select your payment below.</p>
+              <div>
+                <button type="button" class="btn btn-secondary">Credit/Debit</button>
+                <button type="button" class="btn btn-secondary">PayPal</button>
+              </div>
+        </div>
+        </div>
 
       <!--Optional step-->
 
-      <h2 class="display-4">Optional</h2>
-        <p>Do you have a special purpose for your donation? If so, please let us know.</p>
-        <p>I want my donation to be dedicated:</p>
-        <form action="/action_page.php">
-          <label for="fname">In honor of, in memory of etc.</label>
-          <input type="text" id="fname" name="fname"><br><br>
-          <div class="container">
-            <div class="round">
-              <input type="checkbox" checked id="checkbox" />
-              <label for="checkbox"></label>
-            </div>
-            <p>Please send an acknowledgement to the individual or organization to whom I am dedicating my donation.</p>
-          </div>     
-        </form>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="display-4">Optional</h2>
+            <p>Do you have a special purpose for your donation? If so, please let us know.</p>
+            <p>I want my donation to be dedicated:</p>
+            <form action="/action_page.php">
+              <label for="fname">In honor of, in memory of etc.</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <div class="container">
+                <div class="round">
+                  <input type="checkbox" checked id="checkbox" />
+                  <label for="checkbox"></label>
+                </div>
+                <p>Please send an acknowledgement to the individual or organization to whom I am dedicating my donation.</p>
+              </div>     
+            </form>
+        </div>
+      </div>
 
         <!--Step 4-->
 
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <h2 class="display-4">Step 4: Giving Option</h2>
-          <p>Your donation is securely processed by our nonprofit partner, Network for Good, with a 3% transaction fee to cover credit card fees, bank fees, and other processing costs. Please consider chipping in an additional 3% so 100% of your donation amount goes to us.</p>
+        <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <div class="round">
-              <input type="checkbox" checked id="checkbox" />
-              <label for="checkbox"></label>
-            </div>
-            <p>Donate 100% - Add 3% so that 100% of the donation goes to AUTISM SCIENCE FOUNDATION.</p>
+            <div class="btn-group" role="group" aria-label="Basic example"></div>
+              <h2 class="display-4">Step 4: Giving Option</h2>
+              <div>
+                  <p>Your donation is securely processed by our nonprofit partner, Network for Good, with a 3% transaction fee to cover credit card fees, bank fees, and other processing costs. Please consider chipping in an additional 3% so 100% of your donation amount goes to us.</p>
+                  <div class="container">
+                    <div class="round">
+                      <input type="checkbox" checked id="checkbox" />
+                      <label for="checkbox"></label>
+                    </div>
+                    <p>Donate 100% - Add 3% so that 100% of the donation goes to AUTISM SCIENCE FOUNDATION.</p>
+                  </div>
+                  <div class="container">
+                    <div class="round">
+                      <input type="checkbox" checked id="checkbox" />
+                      <label for="checkbox"></label>
+                    </div>
+                    <p>Donate 97% - I understand Network for Good will deduct 3% to cover transaction costs.</p>
+                  </div> 
+                </div>
+              </div>
           </div>
-          <div class="container">
-            <div class="round">
-              <input type="checkbox" checked id="checkbox" />
-              <label for="checkbox"></label>
-            </div>
-            <p>Donate 97% - I understand Network for Good will deduct 3% to cover transaction costs.</p>
-          </div> 
+          </div>
         </div>
 
+        <!--Donate Now button-->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <div class="btn-group" role="group" aria-label="Basic example"></div>
+                <!--<h1 class="display-4">Step 1: Donation Level</h1>-->
+                  <div>
+                        <button type="button" class="btn btn-secondary">Donate Now</button>
+                  </div>
+          </div>
+        </div>
+
+</div>
     </body>
 </html>
