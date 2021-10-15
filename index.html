@@ -37,29 +37,150 @@
 
       <!--Side bar nav-->
     
-      <div class="container">
-        <div class="row py-3">
-            <div class="col-3 order-2" id="sticky-sidebar">
-                <div class="sticky-top">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-3 px-1 bg-dark position-fixed" id="sticky-sidebar">
+            <div class="container">
+              <div id="mySidenav" class="sidenav">
+                <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                <p><a href="#">Donate</a>
+                  </p>
+                <p><a href="#">Participate in Research</a>
+                  </p>
+                <p><a href="#">Events</a>
+                  </p>
+                <p><a href="#">Student Clubs</a>
+                  </p>
+                <p><a href="#">Jobs and Internships</a>
+                  </p>
+                <p><a href="#">Participants in Research</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col offset-3" id="main">
+              <!--<h1>Main Area</h1>-->
+              <div id="main">
+                <div class="jumbotron jumbotron-fluid">
                   <div class="container">
-                    <div id="mySidenav" class="sidenav">
-                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      <a href="#">Donate</a>
-                      <a href="#">Participate in Research</a>
-                      <a href="#">Events</a>
-                      <a href="#">Student Clubs</a>
-                      <a href="#">Jobs and Internships</a>
-                      <a href="#">Participants in Research</a>
-                    </div>
+                    <h1 class="display-4">Donate to Autism Science Foundation</h1>
+                    <p class="lead">Thank you for considering a donation to the Autism Science Foundation. Your generous donation will support urgently needed autism research, and help us understand the causes of autism and develop better treatments.
+                      On behalf of the millions of Americans challenged by autism, thank you for your generosity. You are not only helping to advance scientific progress, you are giving our families the gift of hope.</p>
+                      <p>ASF is a public charity under section 501c3 of the IRS code. Donations are tax-deductible.</p>
+                      <p>Recurring donor? Sign in or create an account to edit a recurring donation.</p>
                   </div>
                 </div>
-            </div>
-            <div class="col" id="main">
-                <h3>Get Involved</h3>
-                ...   
-            </div>
-        </div>
-    </div>
+          
+                <!--Step 1-->
+          
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <div class="btn-group" role="group" aria-label="Basic example"></div>
+                      <h1 class="display-4">Step 1: Donation Level</h1>
+                        <div>
+                              <button type="button" class="btn btn-secondary">$25</button>
+                              <button type="button" class="btn btn-secondary">$50</button>
+                              <button type="button" class="btn btn-secondary">$100</button>
+                              <button type="button" class="btn btn-secondary">$250</button>
+                              <button type="button" class="btn btn-secondary">Other</button>
+                        </div>
+                  </div>
+                </div>
+          
+                <!--Step 2-->
+          
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <div class="btn-group" role="group" aria-label="Basic example"></div>
+                      <h2 class="display-4">Step 2: Donation Frequency</h2>
+                      <div>
+                        <button type="button" class="btn btn-secondary">One Time</button>
+                        <button type="button" class="btn btn-secondary">Monthly</button>
+                        <button type="button" class="btn btn-secondary">Quarterly</button>
+                        <button type="button" class="btn btn-secondary">Annually</button>
+                      </div>
+                  </div>
+                  </div>
+          
+          
+                <!--Step 3-->
+          
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <div class="btn-group" role="group" aria-label="Basic example"></div>
+                      <h2 class="display-4">Step 3: Payment Information</h2>
+                        <p>Please select your payment below.</p>
+                        <div>
+                          <button type="button" class="btn btn-secondary">Credit/Debit</button>
+                          <button type="button" class="btn btn-secondary">PayPal</button>
+                        </div>
+                  </div>
+                  </div>
+          
+                <!--Optional step-->
+          
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h2 class="display-4">Optional</h2>
+                      <p>Do you have a special purpose for your donation? If so, please let us know.</p>
+                      <p>I want my donation to be dedicated:</p>
+                      <form action="/action_page.php">
+                        <label for="fname">In honor of, in memory of etc.</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <div class="container">
+                          <div class="round">
+                            <input type="checkbox" checked id="checkbox" />
+                            <label for="checkbox"></label>
+                          </div>
+                          <p>Please send an acknowledgement to the individual or organization to whom I am dedicating my donation.</p>
+                        </div>     
+                      </form>
+                  </div>
+                </div>
+          
+                  <!--Step 4-->
+          
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <div class="btn-group" role="group" aria-label="Basic example"></div>
+                        <h2 class="display-4">Step 4: Giving Option</h2>
+                        <div>
+                            <p>Your donation is securely processed by our nonprofit partner, Network for Good, with a 3% transaction fee to cover credit card fees, bank fees, and other processing costs. Please consider chipping in an additional 3% so 100% of your donation amount goes to us.</p>
+                            <div class="container">
+                              <div class="round">
+                                <input type="checkbox" checked id="checkbox" />
+                                <label for="checkbox"></label>
+                              </div>
+                              <p>Donate 100% - Add 3% so that 100% of the donation goes to AUTISM SCIENCE FOUNDATION.</p>
+                            </div>
+                            <div class="container">
+                              <div class="round">
+                                <input type="checkbox" checked id="checkbox" />
+                                <label for="checkbox"></label>
+                              </div>
+                              <p>Donate 97% - I understand Network for Good will deduct 3% to cover transaction costs.</p>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+          
+                  <!--Donate Now button-->
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <div class="btn-group" role="group" aria-label="Basic example"></div>
+                          <!--<h1 class="display-4">Step 1: Donation Level</h1>-->
+                            <div>
+                                  <button type="button" class="btn btn-secondary">Donate Now</button>
+                            </div>
+                    </div>
+                  </div>
+          
+          </div>
+          </div>
+      </div>
+  </div>
 
     <!--Initial side bar-->
     <!--
@@ -84,7 +205,10 @@
       <!--Top of Donation Page-->
 
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
+
+<!--Original layout-->
+
+<!--<div id="main">
   
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -94,7 +218,7 @@
             <p>ASF is a public charity under section 501c3 of the IRS code. Donations are tax-deductible.</p>
             <p>Recurring donor? Sign in or create an account to edit a recurring donation.</p>
         </div>
-      </div>
+      </div>-->
 
       <!--Step 1-->
 
