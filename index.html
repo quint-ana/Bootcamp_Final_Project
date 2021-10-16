@@ -135,12 +135,39 @@
                       <h2 class="display-4">Step 3: Payment Information</h2>
                         <p>Please select your payment below.</p>
                         <div>
-                          <button type="button" class="btn btn-secondary">Credit/Debit</button>
+                          <script type="text/javascript">
+                            function toggle(obj) {
+                                      var obj=document.getElementById(obj);
+                                      if (obj.style.display == "block") obj.style.display = "none";
+                                      else obj.style.display = "block";
+                            }
+                            </script>
+                            
+                            <a href="javascript: void(0);" onClick="toggle('q1')">
+                              <div>
+                                <button type="button" class="btn btn-secondary">Credit/Debit</button>
+                              </div>
+                            </a>
+                            <div id="q1" style="display:none;">
+                            Contact Information
+                            <form action="/action_page.php">
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="fname">   
+                            </form>
+                            <form action="/action_page.php">
+                              <label for="fname">Last Name</label>
+                              <input type="text" id="fname" name="fname">   
+                            </form>
+                            <form action="/action_page.php">
+                              <label for="fname">Email</label>
+                              <input type="text" id="fname" name="fname">   
+                            </form>
+                            </div>
                           <button type="button" class="btn btn-secondary">PayPal</button>
                         </div>
                   </div>
                   </div>
-          
+                  
                 <!--Optional step-->
           
                 <div class="jumbotron jumbotron-fluid">
@@ -194,7 +221,6 @@
                   <div class="jumbotron jumbotron-fluid">
                     <div class="container">
                       <div class="btn-group" role="group" aria-label="Basic example"></div>
-                          <!--<h1 class="display-4">Step 1: Donation Level</h1>-->
                             <div>
                                   <button type="button" class="btn btn-secondary">Donate Now</button>
                             </div>
@@ -223,7 +249,7 @@
 
   <!--Bottom nav-->
 
-  <ul class="nav justify-content-center">
+  <!--<ul class="nav justify-content-center">
     <li class="nav-item">
       <a class="nav-link active" href="#">Home</a>
     </li>
@@ -245,7 +271,7 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Contact Us</a>
     </li>
-  </ul>
+  </ul>-->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="index.js"></script>
