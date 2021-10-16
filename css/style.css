@@ -34,21 +34,6 @@
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -105,7 +90,7 @@
     margin: 0;
   }
   
-  body {
+  /*body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -113,7 +98,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
+  } */
   
   .container {
     margin: 0 auto;
@@ -129,18 +114,6 @@
       padding-left: 240px;
     }
   }
-  
-  /* Sidebar */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 58px 0 0; /* Height of navbar */
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 240px;
-    z-index: 600;
-  }
 
   /*.sidebar {
 position: fixed // or absolute
@@ -151,20 +124,9 @@ position: fixed // or absolute
       width: 100%;
     }
   }
-  .sidebar .active {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-  }
+ 
   
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
-
+ 
   /*Donate button*/
 
   button {
