@@ -1,26 +1,35 @@
-/* main navigation */
+/* top navigation */
 .nav {
   justify-content: center;
+  background-color: #D96C6C;
 }
 
 .nav button {
-  color:White;
+  color:#262626;
 }
 
 .btn-danger {
-  background-color: blue !important;
+  background-color: #D96C6C !important;
   border: blue;
-  
 }
 
-/* The navigation menu links */
+.dropdown-menu {
+  background-color: #D96C6C;
+}
+
+/* The side navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 17px;
+  color: black;
   display: block;
   transition: 0.3s;
+  width: 300px;
+}
+
+.sidenav {
+  background-color: #D96C6C;
 }
 
 /* When you mouse over the navigation links, change their color */
