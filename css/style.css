@@ -1,9 +1,16 @@
 /* main navigation */
 .nav {
-  border: blue;
-  width: 1300px;
-  height: 50px;
   justify-content: center;
+}
+
+.nav button {
+  color:White;
+}
+
+.btn-danger {
+  background-color: blue !important;
+  border: blue;
+  
 }
 
 /* The navigation menu links */
