@@ -134,6 +134,28 @@ div.cell {
   .sidenav a {font-size: 18px;}
 }
 
+button a {
+  color: white;
+}
+
+button {
+  justify-content: center;
+  background-color: #D96C6C !important;
+  border-color: #D96C6C;
+  color: white;
+}
+
+button:focus {
+  background-color: blue;
+}
+
+ /*Donate button*/
+
+  .donate {
+  background-color: orange !important;
+  justify-content: center !important;
+  }
+
 /* Green check box */
 .round {
     position: relative;
@@ -223,21 +245,6 @@ position: fixed // or absolute
     .sidebar {
       width: 100%;
     }
-  }
- 
-  
- 
-  /*Donate button*/
-
-  button {
-    justify-content: center;
-    background-color: #D96C6C !important;
-    border-color: #D96C6C;
-  }
-
-  .donate {
-  background-color: orange !important;
-  justify-content: center !important;
   }
 
   /*navbar*/

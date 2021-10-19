@@ -29,3 +29,13 @@ function openNav() {
     // hide any open menus when parent closes
     $('.multi-level-dropdown .dropdown-menu.show').removeClass('show');
   });
+
+  /*changing color of clicked button*/
+
+  /*btn-group
+= IF(yourconditionhere, "Clicked", "NotClicked")*/
+
+
+/*let btnSecondary = document.querySelector('#primary');
+
+btnSecondary.addEventListener('click', () => btnSecondary.style.backgroundColor = '#337ab7')*/
