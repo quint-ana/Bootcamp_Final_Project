@@ -2,6 +2,7 @@
 .nav {
   justify-content: center;
   background-color: #D96C6C;
+  padding: 5px;
 }
 
 .nav button {
@@ -10,12 +11,64 @@
 
 .btn-danger {
   background-color: #D96C6C !important;
-  border: blue;
+  border: #D96C6C;
 }
 
 .dropdown-menu {
   background-color: #D96C6C;
 }
+
+/*start of example nav*/
+
+/*.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: 1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: 100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}*/
+
+/* end of example nav*/
 
 /* The side navigation menu links */
 .sidenav a {
@@ -30,12 +83,50 @@
 
 .sidenav {
   background-color: #D96C6C;
+  padding:10px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
+
+#main {
+  padding: 15px;
+}
+
+form {
+  padding: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+/* (A) GRID CONTAINER */
+#grid-col {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  /* WE CAN ALSO SPECIFY EXACT PIXELS, PERCENTAGE, REPEAT
+  grid-template-columns: 200px 40%;
+  grid-template-columns: repeat(2, 250px); */
+}
+ 
+/* (B) GRID CELLS */
+div.cell {
+  background: white;
+  border: 1px white;
+  padding: 10px;
+}
+ 
+/* (C) RESPONSIVE - 1 COLUMN ON SMALL SCREENS */
+@media screen and (max-width: 640px) {
+  #grid-col { grid-template-columns: 100%; }
+}
+
+/*End of grid columns*/
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -86,6 +177,12 @@
   .round input[type="checkbox"]:checked + label:after {
     opacity: 1;
   }
+
+/*Footer*/
+  footer {
+    justify-content: center;
+    padding: 25px;
+  }
   
   /* general styling */
   html, body {
@@ -110,7 +207,7 @@
 
   }
   body {
-    background-color: #fbfbfb;
+    background-color: white;
   }
   @media (min-width: 991.98px) {
     main {
@@ -134,37 +231,44 @@ position: fixed // or absolute
 
   button {
     justify-content: center;
+    background-color: #D96C6C !important;
+    border-color: #D96C6C;
+  }
+
+  .donate {
+  background-color: orange !important;
+  justify-content: center !important;
   }
 
   /*navbar*/
 
   /* Style the navigation menu */
-.navbar {
+/*.navbar {
   width: 100%;
   background-color: #555;
   overflow: auto;
-}
+}*/
 
 /* Navigation links */
-.navbar a {
+/*.navbar a {
   float: left;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
-}
+  width: 25%;*/ /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  /*text-align: center;*/ /* If you want the text to be centered */
+/*}*/
 
 /* Add a background color on mouse-over */
-.navbar a:hover {
+/*.navbar a:hover {
   background-color: #000;
-}
+}*/
 
 /* Style the current/active link */
-.navbar a.active {
+/*.navbar a.active {
   background-color: #04AA6D;
-}
+}*/
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
