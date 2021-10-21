@@ -144,10 +144,6 @@ div.cell {
   .sidenav a {font-size: 18px;}
 }
 
-button a {
-  color: white;
-}
-
 button {
   justify-content: center;
   background-color: #80D9BA !important;
@@ -155,9 +151,9 @@ button {
   color: white;
 }
 
-button:focus {
+/*button:focus {
   background-color: blue;
-}
+}*/
 
  /*Donate button*/
 
