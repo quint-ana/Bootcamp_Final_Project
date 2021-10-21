@@ -1,0 +1,725 @@
+/*body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+}*/
+
+/*.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+ }*/
+ 
+ /* Add a black background color to the top navigation */
+ .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .button-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .button {
+    border: none;
+    border-radius: 3em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    width: auto;
+  }
+
+  .cta-button {
+    background-color: orange;
+    color: #fff /*!important*/;
+  }
+  
+  .cta-button:hover {
+    background-color: #777;
+  }
+
+/*Cards*/
+  
+  /*.fas.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  
+  .fas.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }*/
+
+  /*.card {
+      display:inline-block;
+      border: 1px solid #ccc;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+  }*/
+
+  /*{
+    box-sizing: border-box;
+  }*/
+  
+  /*Custom radio buttons start*/
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  /*Custom radio buttons ends*/
+
+  /*Donation amounts*/
+
+  .donate {
+      text-align: center;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 75px 30px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /*.donate-btn {
+      float:right;
+  }*/
+
+ /*.nav {
+    justify-content: center;
+    background-color: #D96C6C;
+    padding: 5px;
+  }*/
+
+
+/*button {
+    justify-content: center;
+    background-color: orange !important;
+    border-color: #D96C6C;
+    color: white;
+  }*/
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+   /* Background styles */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/1584717894466.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+
+     /* Background styles */
+     background-color: rgba(147, 112, 219, 0.8);
+}
+
+/* Green check box */
+.round {
+    position: relative;
+  }
+  
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+  }
+  
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+  }
+  
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+    background-color: #80D9BA;
+    border-color: #80D9BA;
+  }
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+/*End of Green Rounch Check*/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  /* (A) GRID CONTAINER */
+  #grid-col {
+    display: grid;
+    grid-template-columns: auto auto;
+  
+    /* WE CAN ALSO SPECIFY EXACT PIXELS, PERCENTAGE, REPEAT
+    grid-template-columns: 200px 40%;
+    grid-template-columns: repeat(2, 250px); */
+  }
+   
+  /* (B) GRID CELLS */
+  div.cell {
+    background: white;
+    border: 1px white;
+    padding: 10px;
+  }
+
+  /*Credit Card Payment start*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    min-height: 100%;
+    font-family: 'Open sans', sans-serif;
+  }
+  body {
+    background: linear-gradient(50deg, #f3c680, hsla(179,54%,76%,1));
+  }
+  
+  
+  /*--------------------
+  Buttons
+  --------------------*/
+  .btn {
+    display: block;
+    background: hsl(86, 76%, 71%);
+    color: hsl(0, 0, 100);
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 15px 15px;
+    border-radius: 5px;
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all .2s ease-in-out;
+      box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+      border-radius: 5px;
+    }
+  
+    &:hover::after {
+      background: hsla(0, 0, 0, 0.1);
+      box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
+    }
+  
+  }
+  
+  /*--------------------
+  Form
+  --------------------*/
+  .form {
+  
+    fieldset {
+      border: none;
+      padding: 0;
+      padding: 10px 0;
+      position: relative;
+      clear: both;
+  
+      &.fieldset-expiration {
+        float: left;
+        width: 60%;
+  
+        & .select {
+          width: 84px;
+          margin-right: 12px;
+          float: left;
+        }
+      }
+  
+      &.fieldset-ccv {
+        clear: none;
+        float: right;
+        width: 86px;
+      }
+  
+      label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 11px;
+        color: hsla(0, 0, 0, .6);
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: Inconsolata;
+      }
+  
+      input,
+      .select {
+        width: 100%;
+        height: 38px;
+        color: hsl(0, 0, 20);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 15px;
+        outline: none!important;
+        border: 1px solid hsla(0, 0, 0, 0.3);
+        box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+  
+        &.input-cart-number {
+          width: 82px;
+          display: inline-block;
+          margin-right: 8px;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+  
+      .select {
+        position: relative;
+  
+        &::after {
+          content: '';
+          border-top: 8px solid #222;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          position: absolute;
+          z-index: 2;
+          top: 14px;
+          right: 10px;
+          pointer-events: none;
+        }
+  
+        select {
+          appearance: none;
+          position: absolute;
+          padding: 0;
+          border: none;
+          width: 100%;
+          outline: none!important;
+          top: 6px;
+          left: 6px;
+          background: none;
+  
+          :-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+          }
+  
+        }
+      }
+  
+  
+    }
+  
+    button {
+      width: 100%;
+      outline: none!important;
+      background: linear-gradient(180deg, #49a09b, #3d8291);
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      box-shadow: none;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      margin-top: 90px;
+      color:black;
+  
+      & .fa {
+        margin-right: 6px;
+      }
+    }
+  
+  }
+  
+  /*--------------------
+  Checkout
+  --------------------*/
+  .checkout {
+    margin: 150px auto 30px;
+    position: relative;
+    width: 460px;
+    background: white;
+    border-radius: 15px;
+    padding: 160px 45px 30px;
+    box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
+  }
+  
+  /*--------------------
+  Credit Card
+  --------------------*/
+  /*.credit-card-box {
+    perspective: 1000;
+    width: 400px;
+    height: 280px;
+    position: absolute;
+    top: -112px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    &:hover .flip,
+    &.hover .flip {
+      transform: rotateY(180deg);
+    }
+  
+    .front,
+    .back {
+      width: 400px;
+      height: 250px;
+      border-radius: 15px;
+      backface-visibility: hidden;
+      background: linear-gradient(135deg, #bd6772, #53223f);
+      position: absolute;
+      color: #fff;
+      font-family: Inconsolata;
+      top: 0;
+      left: 0;
+      text-shadow: 0 1px 1px hsla(0, 0, 0, 0.3);
+      box-shadow: 0 1px 6px hsla(0, 0, 0, 0.3);
+  
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('http://cdn.flaticon.com/svg/44/44386.svg') no-repeat center;
+        background-size: cover;
+        opacity: .05;
+      }
+    }
+  
+    .flip {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 9px;
+      right: 20px;
+      width: 60px;
+  
+      svg {
+        width: 100%;
+        height: auto;
+        fill: #fff;
+      }
+    }
+  
+    .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+  
+    .back {
+      transform: rotateY(180deg);
+  
+      .logo {
+        top: 185px;
+      }
+  
+    }
+  
+    .chip {
+      position: absolute;
+      width: 60px;
+      height: 45px;
+      top: 20px;
+      left: 20px;
+      background: linear-gradient(135deg, hsl(269,54%,87%) 0%,hsl(200,64%,89%) 44%,hsl(18,55%,94%) 100%);;
+      border-radius: 8px;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 4px solid hsla(0, 0, 50, .1);
+        width: 80%;
+        height: 70%;
+        border-radius: 5px;
+      }
+    }
+  
+    .strip {
+      background: linear-gradient(135deg, hsl(0, 0, 25%), hsl(0, 0, 10%));
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      top: 30px;
+      left: 0;
+    }
+  
+    .number {
+      position: absolute;
+      margin: 0 auto;
+      top: 103px;
+      left: 19px;
+      font-size: 38px;
+    }
+  
+    label {
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-shadow: none;
+      text-transform: uppercase;
+      font-weight: normal;
+      opacity: 0.5;
+      display: block;
+      margin-bottom: 3px;
+    }
+  
+    .card-holder,
+    .card-expiration-date {
+      position: absolute;
+      margin: 0 auto;
+      top: 180px;
+      left: 19px;
+      font-size: 22px;
+      text-transform: capitalize;
+    }
+  
+    .card-expiration-date {
+      text-align: right;
+      left: auto;
+      right: 20px;
+    }
+  
+    .ccv {
+      height: 36px;
+      background: #fff;
+      width: 91%;
+      border-radius: 5px;
+      top: 110px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      margin: 0 auto;
+      color: #000;
+      text-align: right;
+      padding: 10px;
+  
+      label {
+        margin: -25px 0 14px;
+        color: #fff;
+      }
+    }
+  
+  
+  }*/
+  /*Credit Card Payment end*/
+
+  html, body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    }
+
+    h2 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #1c87c9;
+    }
+    
+    
+   
+    
+    
+    button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+     
+    @media (min-width: 568px) {
+    .main-block {
+    flex-direction: row;
+    }
+   
+    
+    
+   
+    }
